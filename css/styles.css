@@ -95,6 +95,7 @@ body {
 h1, h2, h3 {
     font-family: 'Lora', serif;
     font-weight: 400;
+    margin-top: 0;
 }
 
 h1 {
@@ -186,4 +187,18 @@ media queries to modify the arrangement*/
     border-bottom:#707070 1px solid;
     padding: 1em;
     margin-bottom: 2em;
+}
+
+.article-recent {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
 }
