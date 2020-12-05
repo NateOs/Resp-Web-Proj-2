@@ -126,6 +126,7 @@ strong {
     font-size: .875rem;
     color: #1792D2;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .article-read-more:hover,
@@ -135,6 +136,9 @@ strong {
     font-weight: bolder;
 }
 
+.article-info {
+    margin: 2em 0;
+}
 
 .article-body {
     color:#707070;
@@ -174,4 +178,12 @@ media queries to modify the arrangement*/
         width: 20%;
     }
 
+}
+
+/*Articles*******
+****************/
+.article-featured {
+    border-bottom:#707070 1px solid;
+    padding: 1em;
+    margin-bottom: 2em;
 }
