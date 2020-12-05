@@ -14,6 +14,7 @@
 
 header {
     background: #f8f8f8;
+    padding: 2em 0;
 }
 
 nav ul {
@@ -50,10 +51,10 @@ nav a:hover, nav a:focus {
     border-bottom: 1px solid #707070
 }
 
-/*NavBar Media Query*****/
-
+/* NavBar Media Query****
+/* switching the axis around...*/
 @media (max-width: 675px) {
-    /* switching the axis around...*/
+    
 
   .container-nav {
       flex-direction:column;
@@ -65,6 +66,7 @@ nav a:hover, nav a:focus {
 }
 
 @media (max-width: 675px) {
+
     /* switching the axis around...*/
     nav ul {
         flex-direction: column;
@@ -73,13 +75,15 @@ nav a:hover, nav a:focus {
     nav li {
         margin: .5em 0;
     }
-}
+} 
 
 /***Body************
 ********************/
 img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
 }
+
 body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -120,21 +124,54 @@ strong {
 
 .article-read-more, .article-info {
     font-size: .875rem;
+    color: #1792D2;
+    font-weight: 700;
 }
 
 .article-read-more:hover,
 .article-read-more:focus{
     color: #143774;
     text-decoration: underline;
-    font-weight: 700;
+    font-weight: bolder;
 }
 
 
+.article-body {
+    color:#707070;
+}
 
 /***Layout********
 ******************/
-.container{
+.container {
     width: 90%;
     max-width: 980px;
     margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+}
+
+/*With mobile first, you create everything as a mobile view and use
+media queries to modify the arrangement*/
+
+@media (min-width: 675px) { 
+    .container-flex {
+        flex-direction: row
+    }
+
+    main {
+        width: 75%
+    }
+
+    aside {
+        width: 20%;
+    }
+
 }
