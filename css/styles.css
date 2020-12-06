@@ -202,3 +202,25 @@ media queries to modify the arrangement*/
 .article-recent-secondary {
     order: 1;
 }
+
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 60%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-image {
+        width: 100%;
+        min-height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
