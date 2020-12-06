@@ -146,6 +146,17 @@ strong {
     color:#707070;
 }
 
+.widget-title,
+.widget-post-title {
+    font-size: 1rem;
+}
+
+.widget-title {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
 /***Layout********
 ******************/
 .container {
@@ -182,9 +193,14 @@ media queries to modify the arrangement*/
         margin-left: 1em;
         margin-top: 1.7em
     }
-
 }
 
+footer {
+    background: #143774;
+    text-align: center;
+    padding: 3em 0;
+    color: white;
+}
 /*Articles*******
 ****************/
 .article-featured {
@@ -236,3 +252,24 @@ media queries to modify the arrangement*/
     padding: 1em;
     margin:2em 0;
 }
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.widget-post-title {
+    order: 2;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-image {
+    order: 1;
+}
+
