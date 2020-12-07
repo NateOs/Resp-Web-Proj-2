@@ -92,6 +92,13 @@ body {
     font-weight: 300;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /***Typography*****/
 h1, h2, h3 {
     font-family: 'Lora', serif;
@@ -103,6 +110,16 @@ h1 {
     color: #143774;
     font-size: 2rem;
     margin: 0;
+}
+
+h2 {
+    color: #143774;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size:1rem;
+    color: #1792D2;
 }
 
 a:hover, a:focus {
@@ -262,6 +279,7 @@ footer {
 
 .widget-post-title {
     order: 2;
+    color: #143774;
 }
 
 .widget-recent-post:last-child {
